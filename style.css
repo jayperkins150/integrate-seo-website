@@ -460,6 +460,10 @@ img {
   z-index: 1;
 }
 
+#Contact {
+  top: 0px;
+}
+
 .mySidenav3 a {
   position: absolute;
   display: block;
