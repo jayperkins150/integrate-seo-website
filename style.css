@@ -428,7 +428,7 @@ img {
   left: 0%;
   transition: 0.5s;
   height: 7vw;
-  width: 93%;
+  width: 100%;
   z-index: 8;
   text-decoration: none;
   text-align: center;
@@ -439,7 +439,6 @@ img {
 	font-weight: 50;
   font-style: thin;
   color: #fffdd0;
-  background-color: #ff6961;
   border-radius: 0 0 0 0;
   rotate: 0deg;
   transition-delay: 2s;
