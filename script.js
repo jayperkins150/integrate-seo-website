@@ -1,28 +1,27 @@
 function changeHeadingText() {
-    var headingElement = document.getElementById("dontClick");
-    headingElement.textContent = "I told you not to click here!";
-    console.log("The forbidden button has been clicked! Oh no!");
+    const headingElement = document.getElementById("dontClick");
+
+    if (headingElement) {
+        headingElement.textContent = "I told you not to click here!";
+    }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".delayed-link").forEach(link => {
-        link.addEventListener("click", function (event) {
+        link.addEventListener("click", event => {
             event.preventDefault();
 
-            // Prevent multiple clicks during the animation
-            if (this.classList.contains("is-expanding")) {
+            if (link.classList.contains("is-expanding")) {
                 return;
             }
 
-            const targetUrl = this.href;
+            const targetUrl = link.href;
 
-            // Trigger the CSS animation
-            this.classList.add("is-expanding");
+            link.classList.add("is-expanding");
 
-            // Navigate after the expansion finishes
             setTimeout(() => {
                 window.location.href = targetUrl;
-            }, 700);
+            }, 1000);
         });
     });
 });
