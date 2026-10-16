@@ -438,7 +438,7 @@ img {
   transition-delay: 2s;
 }
 
-.socials-background {
+.web-app-setup-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -448,7 +448,7 @@ img {
   z-index: 0;
 }
 
-.socials-text {
+.web-app-setup-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -479,10 +479,6 @@ img {
   background-color: #f7c900;
   border-radius: 0 0 0 0;
   transition-delay: 2s;
-}
-
-#Contact {
-  top: 0px;
 }
 
 .mySidenav4 a {
