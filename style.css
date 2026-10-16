@@ -402,8 +402,8 @@ img {
 
 .mySidenav a {
   position: absolute;
-  left: 0%;
-  top: 0px;
+  left: 0;
+  top: 0;
   transition: 0.5s;
   height: 100%;
   width: 7vw;
@@ -461,13 +461,14 @@ img {
 }
 
 #Contact {
-  top: 0px;
+  top: ;
 }
 
 .mySidenav3 a {
   position: absolute;
   display: block;
-  bottom: 0%;
+  bottom: 0;
+  right: 0;
   display: block;
   transition: 0.5s;
   width: 100%;
