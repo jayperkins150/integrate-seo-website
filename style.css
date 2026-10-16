@@ -506,8 +506,51 @@ img {
   transition-delay: s;
 }
 
-mySidenav4 a:active {
-	transform: scaleX(100%);
+
+/* Keep the clicked navigation link above everything else */
+.mySidenav a.is-expanding,
+.mySidenav2 a.is-expanding,
+.mySidenav3 a.is-expanding,
+.mySidenav4 a.is-expanding {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  transition:
+    width 0.7s ease,
+    height 0.7s ease,
+    top 0.7s ease,
+    left 0.7s ease,
+    right 0.7s ease,
+    bottom 0.7s ease;
+}
+
+/* Fade the text out */
+.delayed-link.is-expanding p {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* Expand the red background too */
+.mySidenav2 a.is-expanding .web-app-setup-background {
+  width: 100%;
+  height: 100%;
+  transition: width 0.7s ease, height 0.7s ease;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .mySidenav a.is-expanding,
+  .mySidenav2 a.is-expanding,
+  .mySidenav3 a.is-expanding,
+  .mySidenav4 a.is-expanding,
+  .delayed-link.is-expanding p,
+  .mySidenav2 a.is-expanding .web-app-setup-background {
+    transition-duration: 0.01ms;
+  }
 }
 
 body {
