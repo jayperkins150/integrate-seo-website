@@ -426,21 +426,21 @@ img {
   position: absolute;
   top: 0%;
   left: 0%;
-  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 7vw;
   width: 100%;
   z-index: 8;
   text-decoration: none;
   text-align: center;
-  vertical-align: middle;
   writing-mode: horizontal-tb;
   font-size: 20px;
-	font-family: "Gabarito", serif;
-	font-weight: 50;
-  font-style: thin;
+  font-family: "Gabarito", serif;
+  font-weight: 50;
   color: #fffdd0;
-  border-radius: 0 0 0 0;
-  rotate: 0deg;
+  background-color: #ff6961;
+  transition: 0.5s;
   transition-delay: 2s;
 }
 
