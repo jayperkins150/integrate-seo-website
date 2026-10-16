@@ -1,4 +1,4 @@
-# JP Website (draft)
+# Integrate SEO Website (draft)
 
 A personal portfolio website created to showcase my projects, technical skills, and journey as a developer. This website serves as a central hub for visitors to learn more about me and explore the work I've built.
 
